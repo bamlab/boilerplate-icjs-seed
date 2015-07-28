@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="fr.bamlab.ionic.template" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>ICJS Template</name>
+<widget id="fr.bamlab.icjs.seed" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>ICJS Seed</name>
   <description>
-        A template to quickstart a
+        A seed project to kickstart a new ionic project
     </description>
   <author email="contact@bamlab.fr" href="http://www.bamlab.fr/">
     Bamlab
