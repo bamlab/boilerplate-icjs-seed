@@ -1,0 +1,5 @@
+{
+  "name": "icjs-template",
+  "app_id": "fr.bamlab.ionic.template",
+  "gulpStartupTasks": ["watch"]
+}
