@@ -27,7 +27,7 @@ config =
     concatFile: "app.js"
     dest: "#{wwwPath}/js"
   style:
-    src: ["#{srcPath}/**/*.scss"]
+    src: ["#{srcPath}/common/scss/main.scss"]
     concatFile: "app.css"
     dest: "#{wwwPath}/css"
   templates:
