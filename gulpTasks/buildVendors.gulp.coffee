@@ -3,12 +3,10 @@ mainBowerFiles = require 'main-bower-files'
 plumber = require 'gulp-plumber'
 filter = require 'gulp-filter'
 concat = require 'gulp-concat'
-
 config = require './config.gulp.coffee'
 
 gulp.task 'build:vendors', ->
   mainFiles = mainBowerFiles({debugging: true})
-  console.log mainFiles
 
   # Scripts
   gulp.src mainFiles

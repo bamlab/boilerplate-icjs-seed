@@ -23,5 +23,6 @@ hockey.json
 # intelliJ?
 .idea/
 
-### Project specific
+### Boilerplate specific
 www/
+env.local.json

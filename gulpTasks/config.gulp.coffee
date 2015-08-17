@@ -1,9 +1,24 @@
+fs = require('fs')
+
 srcPath = 'src'
 wwwPath = 'www'
+envPath = 'environments'
+env = process.env.APP_ENV
+
+configFilePath = "#{envPath}/env.#{env}.json"
+
+if !fs.existsSync(configFilePath)
+  errorMessage = "Config file for APP_ENV=#{env} does not exist."
+  throw new Error(errorMessage)
+else
+  console.log("Building for #{env}")
+  envConfig = require("../#{envPath}/env.#{env}.json")
 
 config =
   srcPath: srcPath
   wwwPath: wwwPath
+  env: env
+  envConfig: envConfig
   index:
     src: "#{srcPath}/index.jade"
     dest: "#{wwwPath}"
@@ -17,7 +32,7 @@ config =
     dest: "#{wwwPath}/css"
   templates:
     src: ["#{srcPath}/**/*.jade", "!#{srcPath}/index.jade"]
-    moduleName: "templates"
+    moduleName: envConfig.app_name
     concatFile: "templates.js"
     dest: "#{wwwPath}/js"
   assets:

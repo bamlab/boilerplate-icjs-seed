@@ -1,1 +1,1 @@
-angular.module('myApp', [])
+angular.module('@@app_name', ['ionic'])
