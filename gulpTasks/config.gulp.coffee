@@ -12,8 +12,8 @@ config =
     concatFile: "app.js"
     dest: "#{wwwPath}/js"
   style:
-    src: ["#{srcPath}/**/*.sass"]
-    concatFile: "style.css"
+    src: ["#{srcPath}/**/*.scss"]
+    concatFile: "app.css"
     dest: "#{wwwPath}/css"
   templates:
     src: ["#{srcPath}/**/*.jade", "!#{srcPath}/index.jade"]
@@ -27,6 +27,7 @@ config =
     concatFileJs: "vendors.js"
     concatFileCss: "vendors.css"
     destFonts: "#{wwwPath}/fonts"
-    dest: "#{wwwPath}"
+    destJS: "#{wwwPath}/js"
+    destCSS: "#{wwwPath}/css"
 
 module.exports = config
