@@ -1,0 +1,52 @@
+/* COLORS */
+$color_primary:                   #F9DE42;  /*YELLOW*/
+$color_text_primary:              #272445;  /*BLACKY PURPLE*/
+$color_text_secondary:            #AFADC3;  /*GREY*/
+$color_white:                     #FFFFFF;  /*WHITE*/
+$color_lightGrey:                 #EFEFEF;  /*VERY LIGHT GREY*/
+
+/* FONT */
+$font-family-base:                "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+
+$font-size-xlarge:                28px; // should be used only for ionicons
+$font-size-large:                 20px; // titles
+$font-size-base:                  16px; // regular contents and body
+$font-size-small:                 13px;
+$font-weight-normal:              300;
+$font-weight-bold:                600;   //  a adapter si besoin (pas encore utilisé ni testé)
+$font-weight-black:               700;  //  a adapter si besoin (pas encore utilisé ni testé)
+
+/*  GENERAL  */
+$radius:                          3px;
+$outter-margins:                  20px;
+$inner-margins:                   10px;
+$inner-padding:                   5px;
+
+//  BUTTONS
+$button-light-bg:                 $color_lightGrey;
+$button-light-text:               $color_text_primary;
+$button-light-border:             $color_lightGrey;
+$button-light-active-bg:          darken($color_lightGrey, 10%);
+$button-light-active-border:      darken($color_lightGrey, 10%);
+
+$button-default-bg:                $color_primary;
+$button-default-text:              $color_text_primary;
+$button-default-border:            $color_primary;
+$button-default-active-bg:         darken($color_primary, 10%);
+$button-default-active-border:     darken($color_primary, 10%);
+
+//  HEADER BAR
+$bar-default-bg:                  $color_primary;
+$bar-default-text:                $color_text_primary;
+$bar-default-border:              $color_primary;
+$bar-default-active-bg:           $color_primary;
+$bar-default-active-border:       $color_primary;
+$bar-height:                      54px;
+
+//  OTHER BARS
+$bar-footer-height:              45px;
+$bar-stable-bg:                  $color_white;
+$bar-stable-text:                $color_text_primary;
+$bar-stable-border:              $color_white;
+$bar-stable-active-bg:           $color_white;
+$bar-stable-active-border:       $color_white;
