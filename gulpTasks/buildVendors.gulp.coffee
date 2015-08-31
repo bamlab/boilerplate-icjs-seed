@@ -6,7 +6,7 @@ concat = require 'gulp-concat'
 config = require './config.gulp.coffee'
 
 gulp.task 'build:vendors', ->
-  mainFiles = mainBowerFiles({debugging: true})
+  mainFiles = mainBowerFiles()
 
   # Scripts
   gulp.src mainFiles
@@ -15,7 +15,7 @@ gulp.task 'build:vendors', ->
   .pipe concat config.vendors.concatFileJs
   .pipe gulp.dest config.vendors.destJS
 
-  
+
 
   # Fonts
   gulp.src mainFiles
