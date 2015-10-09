@@ -10,7 +10,7 @@ gulp.task 'build:style', ->
   gulp.src config.style.src
     .pipe plumber()
     .pipe sourcemaps.init()
-    .pipe sass()
+    .pipe sass().on('error', sass.logError)
     .pipe concat config.style.concatFile
     .pipe sourcemaps.write()
     .pipe gulp.dest config.style.dest
